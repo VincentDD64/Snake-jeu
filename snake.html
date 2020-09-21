@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Snake</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="centrer">
+            <h1 id="score">Score : 0</h1>
+            <p>
+                <a class="btn btn-success btn-lg" id="pause">Pause</a>
+                <a class="btn btn-primary btn-lg" id="reset">Recommencer</a>
+            </p>
+        </header>
+
+        <section class="centrer col-lg-12">
+            <div id="jeu">
+            </div>
+
+            <div id="menu" class="isoler-haut jumbotron">
+                <h1>Le jeu du serpent</h1>
+                <p>Dirigez vous avec les flèches du clavier et manger les petits carrés pour le faire grossir.<br />Si le serpent mord sa queue c'est perdu.</p>
+                <p>
+                    <a class="btn btn-success btn-lg" id="commencer">Commencer</a>
+                    
+                </p>
+            </div>
+
+            <div id="fin" class="isoler-haut jumbotron">
+                <h1>Game Over !</h1>
+                <p id="fin-desc">Le serpent a mordu sa queue !</p>
+                <p>
+                    <a class="btn btn-success btn-lg" id="recommencer">Recommencer</a> 
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer centrer isoler-haut">  
+    </footer>
+  
+</body>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="snake.js"></script>
+    <noscript>Votre navigateur ne supporte pas JavaScript.</noscript>
+</html>
